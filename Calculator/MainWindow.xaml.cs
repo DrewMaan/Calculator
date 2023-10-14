@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using System.Windows.Controls;
 
 namespace Calculator
 {
@@ -10,6 +11,17 @@ namespace Calculator
 		public MainWindow()
 		{
 			InitializeComponent();
+		}
+
+		private void NumberButtonClick(object sender, RoutedEventArgs e) 
+		{
+			Button? numberButton = sender as Button;
+			if(numberButton is null)
+			{
+				return;
+			}
+
+			Input.Text += numberButton.Content.ToString();
 		}
 	}
 }

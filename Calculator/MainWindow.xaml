@@ -14,7 +14,7 @@
 			<RowDefinition/>
 		</Grid.RowDefinitions>
 		<TextBox Grid.Row="0"
-				 Margin="3,10"
+				 Margin="3,10" x:Name="Input"
 				 MinHeight="30" MaxHeight="30" MaxWidth="{Binding ElementName=Window, Path=MaxWidth}"
 				 TextAlignment="Right" TextWrapping="NoWrap"
 				 MinLines="1" MaxLines="1" MaxLength="25"
@@ -22,7 +22,91 @@
 				 BorderThickness="2" BorderBrush="SkyBlue"
 				 FontFamily="Geometr212 BkCn BT" FontSize="22"
 				 Foreground="DarkBlue">
-			1.2345,678_90-
 		</TextBox>
+		<Grid Grid.Row="1"
+			  Margin="5">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+			</Grid.RowDefinitions>
+
+			<Button Grid.Column="0" Grid.Row="0"
+					Margin="0,0,2,2" x:Name="NumberOne"
+					Background="LightBlue" Foreground="DarkBlue"
+					BorderBrush="BlueViolet" BorderThickness="2"
+					Content="1"
+					FontSize="32" FontFamily="Geometr212 BkCn BT"
+					Click="NumberButtonClick"/>
+			
+			<Button Grid.Column="1" Grid.Row="0"
+					Margin="2,0,2,2" x:Name="NumberTwo"
+					Background="LightBlue" Foreground="DarkBlue"
+					BorderBrush="BlueViolet" BorderThickness="2"
+					Content="2"
+					FontSize="32" FontFamily="Geometr212 BkCn BT"
+					Click="NumberButtonClick"/>
+			
+			<Button Grid.Column="2" Grid.Row="0"
+					Margin="2,0,0,2" x:Name="NumberThree"
+					Background="LightBlue" Foreground="DarkBlue"
+					BorderBrush="BlueViolet" BorderThickness="2"
+					Content="3"
+					FontSize="32" FontFamily="Geometr212 BkCn BT"
+					Click="NumberButtonClick"/>
+			
+			<Button Grid.Column="0" Grid.Row="1"
+					Margin="0,2,2,2" x:Name="NumberFour"
+					Background="LightBlue" Foreground="DarkBlue"
+					BorderBrush="BlueViolet" BorderThickness="2"
+					Content="4"
+					FontSize="32" FontFamily="Geometr212 BkCn BT"
+					Click="NumberButtonClick"/>
+			
+			<Button Grid.Column="1" Grid.Row="1"
+					Margin="2,2,2,2" x:Name="NumberFive"
+					Background="LightBlue" Foreground="DarkBlue"
+					BorderBrush="BlueViolet" BorderThickness="2"
+					Content="5"
+					FontSize="32" FontFamily="Geometr212 BkCn BT"
+					Click="NumberButtonClick"/>
+			
+			<Button Grid.Column="2" Grid.Row="1"
+					Margin="2,2,0,2" x:Name="NumberSix"
+					Background="LightBlue" Foreground="DarkBlue"
+					BorderBrush="BlueViolet" BorderThickness="2"
+					Content="6"
+					FontSize="32" FontFamily="Geometr212 BkCn BT"
+					Click="NumberButtonClick"/>
+			
+			<Button Grid.Column="0" Grid.Row="2"
+					Margin="0,2,2,0" x:Name="NumberSeven"
+					Background="LightBlue" Foreground="DarkBlue"
+					BorderBrush="BlueViolet" BorderThickness="2"
+					Content="7"
+					FontSize="32" FontFamily="Geometr212 BkCn BT"
+					Click="NumberButtonClick"/>
+			
+			<Button Grid.Column="1" Grid.Row="2"
+					Margin="2,2,2,0" x:Name="NumberEight"
+					Background="LightBlue" Foreground="DarkBlue"
+					BorderBrush="BlueViolet" BorderThickness="2"
+					Content="8"
+					FontSize="32" FontFamily="Geometr212 BkCn BT"
+					Click="NumberButtonClick"/>
+			
+			<Button Grid.Column="2" Grid.Row="2"
+					Margin="2,2,0,0" x:Name="NumberNine"
+					Background="LightBlue" Foreground="DarkBlue"
+					BorderBrush="BlueViolet" BorderThickness="2"
+					Content="9"
+					FontSize="32" FontFamily="Geometr212 BkCn BT"
+					Click="NumberButtonClick"/>
+		</Grid>
 	</Grid>
 </Window>
