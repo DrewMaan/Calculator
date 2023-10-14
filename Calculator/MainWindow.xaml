@@ -5,8 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+		x:Name="Window"
+        Title="MainWindow" Height="450" 
+		Width="350" MinWidth="300" MaxWidth="500">
     <Grid>
-
-    </Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="50"/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		<TextBox Grid.Row="0" Grid.ColumnSpan="2"
+				 Margin="3,10"
+				 MinHeight="30" MaxHeight="30" MaxWidth="{Binding ElementName=Window, Path=MaxWidth}"
+				 TextAlignment="Right" TextWrapping="NoWrap"
+				 MinLines="1" MaxLines="1" MaxLength="25"
+				 CaretBrush="#0000" 
+				 BorderThickness="2" BorderBrush="SkyBlue"
+				 FontFamily="Geometr212 BkCn BT" FontSize="22"
+				 Foreground="DarkBlue">
+			1.2345,678_90-
+		</TextBox>
+	</Grid>
 </Window>
